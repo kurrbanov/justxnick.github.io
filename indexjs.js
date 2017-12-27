@@ -14,5 +14,10 @@ function resultNumber(){
 	res = parseInt(userNumber, numberSystem);
 	result = res.toString(numberSystem2);
 	
-	swal(result);
+	if (isNaN(result)){
+		swal("Ошибка!", "Проверьте правильность системы счисления!", "error");
+	}
+	else{
+		swal("Результат: ", result, "success");
+	}
 }
