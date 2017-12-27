@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+*::selection{
+	color: white;
+	background: #ff5252; 
+}
+
+html, body{
+	background: #fff;
+}
+
+header{
+	background-image: linear-gradient(to bottom, black 0%, transparent 35%), url('https://ak7.picdn.net/shutterstock/videos/7104067/thumb/1.jpg');
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	flex-direction: column;    
+	color: white;
+	font-family: 'Rubik';
+	font-weight: 900;
+	font-size: 1.5em;
+}
+
+
+.first{
+	margin-top: 15vmin; 
+}
+
+.first h1{
+	color: black;
+	font-family: 'Rubik';
+	font-weight: 900;
+	font-size: 2em;
+	text-align: center;
+}
+
+.first input{
+	padding: 1em;
+	border: none;
+	border-radius: 7px;
+	border: 1px solid lightgray;
+	position: relative;
+	margin-top: 7vmin;
+	font-family: 'Roboto';
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.first input:focus{
+	transition: all .3s ease-in-out;
+	border: none;
+	border: 1px solid black;
+	outline: none!important;
+}
+
+.second{
+	margin-top: 10vmin;
+}
+
+.second h1{
+	color: black;
+	font-family: 'Rubik';
+	font-weight: 900;
+	font-size: 2em;
+	text-align: center;
+}
+
+.second button{
+	margin-top: 7vmin;
+	color: #3174e0;
+	border-radius: 30px;
+	border: 1px solid #3174e0;
+	display: inline-block;
+	font-family: 'Roboto';
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	margin-right: 2vmin;
+	cursor: pointer;
+	outline: none!important;
+}
+
+.second button:hover{
+	transition: all .3s ease-in-out;
+	background-color: #3174e0;
+	color: white;
+}
+
+.second button:focus{
+	outline: none!important;
+	background-color: #3174e0;
+	color: white;
+}
+
+.dr1 input{
+	padding: 0.7em;
+	border: none;
+	border-bottom: 1px solid lightgray; 
+	position: relative;
+	margin-top: 7vmin;
+	font-family: 'Roboto';
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.dr1 input:focus{
+	transition: all .3s ease-in-out;
+	border: none;
+	border-bottom: 1px solid black; 
+	outline: none!important;
+}
+
+
+.tri{ 
+	margin-top: 10vmin;
+}
+
+.tri h1{
+	color: black;
+	font-family: 'Rubik';
+	font-weight: 900;
+	font-size: 2em;
+	text-align: center;
+}
+
+.tri button{
+	margin-top: 7vmin;
+	color: #3174e0;
+	border-radius: 30px;
+	border: 1px solid #3174e0;
+	display: inline-block;
+	font-family: 'Roboto';
+	font-weight: 400;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	margin-right: 2vmin;
+	cursor: pointer;
+}
+
+.tri button:hover{
+	transition: all .3s ease-in-out;
+	background-color: #3174e0;
+	color: white;
+}
+
+.tri button:focus{
+	outline: none!important;
+	background-color: #3174e0;
+	color: white;
+}
+
+.perevesti{
+	margin-top: 10vmin;
+}
+
+.perevesti button{
+	padding-top: 2vmin;
+	padding-bottom: 2vmin;
+	text-align: center;
+	padding-left: 8vmin;
+	padding-right: 8vmin;
+	background-color: #3174e0;
+	color: white;
+	font-family: 'Roboto';
+	font-weight: 300;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+
+.perevesti button:hover{
+	transition: all .3s ease-in-out;
+	background-color: #263e66;
+}
+
+.perevesti button:focus{
+	outline: none!important;
+}
+
+footer{
+	margin-top: 15vmin;
+	background-color: #050f29;
+	margin-bottom: 0;
+	display: block;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.fot-bot #Kurbanov{
+	font-family: 'Permanent Marker';
+	font-weight: 900;
+}
+
+.fot-bot #open-source{
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 1em;
+	color: rgb(189, 181, 181);
+}
+
+.foot-img{
+	position: relative;
+	height: 35vh;
+	background-color: #0b2056;
+	color: white;
+}
+
+.foot-img h1{
+	padding-top: 3vmin;
+	font-family: 'Rubik';
+	font-weight: 900;
+}
+
+.ft-img{
+	display: flex;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 420px) {
+	.ft-img{
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.foot-img{
+		height: 80vh;
+	}
+	header h1{
+		font-size: 1.4em;
+	} 
+	.heart-fot{
+		margin-top: 15px;
+	}
+}
+
+.heart-fot{
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.ft-img img{
+	display: inline-block;
+	margin: 20px;
+}

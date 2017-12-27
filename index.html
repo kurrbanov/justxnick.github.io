@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Калькулятор</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>	
+	<header>
+		<h1>Перевод чисел в разные системы счисления</h1>
+	</header>
+	<div class="first">
+		<h1>Введите число, которое хотите перевести</h1>
+		<center>
+			<input type="number" id="num" placeholder = "Ваше число..." title="Число, которое вы хотите перевести">
+		</center>
+	</div>
+	<div class="second">
+		<h1>Система счисления Вашего числа</h1>
+    <!--
+		<center>
+		<button id="two" onclick="two()">Двоичная</button>
+		<button id="three" onclick="three()">Троичная</button>
+		<button id="eight" onclick="eight()">Восьмеричная</button>
+		<button id="ten" onclick="ten()">Десятичная</button>
+		<button id="sixten" onclick="sixten()">Шестнадцатеричная</button>
+	</center> -->
+</div>
+<div class="dr1">
+	<center>
+		<input id="numberSystem" type="number" name="" placeholder="Система счисления" title="Система счисления Вашего числа">
+	</center>
+</div>
+<div class="tri">
+	<h1>Перевести в...</h1>
+    <!--
+		<center>
+		<button class="two1">Двоичную</button>
+		<button class="three1">Троичную</button>
+		<button class="eight1">Восьмеричную</button>
+		<button class="ten1">Десятичную</button>
+		<button class="sixten1">Шестнадцатеричную</button>
+	</center> -->
+</div>
+<div class="dr1">
+	<center>
+		<input type="number" name="secondSys" placeholder="Систему счисления" title="Перевести в Вашу систему счисления" id="numberSystem2">
+	</center>
+</div>
+<div class="perevesti">
+	<center>
+		<button id="result" onclick="resultNumber()">Перевести</button>
+	</center>
+</div>
+<footer>
+	<div class="foot-img">
+		<center>
+			<h1>Контакты</h1>
+		</center>
+		<div class="ft-img">
+			<a href="https://github.com/JustxNick"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="github" height="70" width="70"></a>
+			<a href="https://t.me/Just_x_Nick"><img src="http://icons.iconarchive.com/icons/froyoshark/enkel/512/Telegram-icon.png" class="telega" height="70" width="70"></a>
+			<a href="https://codepen.io/Just_Nick/pen/qVyKKz"><img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png" width="70" height="70"></a>
+		</div>
+	</div>
+	<div class="fot-bot"> 
+		<p id="open-source">Powered by open source and JavaScript</p>
+		<p id="Kurbanov">Created by Kurbanov</p>
+	</div>
+</footer>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="indexjs.js"></script>
+</body>
+</html>
