@@ -12,12 +12,10 @@ function resultNumber(){
 	numberSystem2 = +numberSystem2;
 	
 	res = parseInt(userNumber, numberSystem);
-	result = res.toString(numberSystem2);
-	
-	if (isNaN(result)){
+	if (isNaN(res)){
 		swal("Ошибка!", "Проверьте правильность системы счисления!", "error");
-	}
-	else{
+	} else {
+		result = res.toString(numberSystem2);
 		swal("Результат: ", result, "success");
 	}
 }
