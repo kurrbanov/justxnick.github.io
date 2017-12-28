@@ -7,7 +7,6 @@ function resultNumber(){
 	numberSystem = document.getElementById('numberSystem').value;
 	numberSystem2 = document.getElementById('numberSystem2').value;
 	
-	userNumber = +userNumber;
 	numberSystem = +numberSystem;
 	numberSystem2 = +numberSystem2;
 	
