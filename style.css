@@ -193,6 +193,7 @@ header{
 }
 
 footer{
+	transition: all .3s ease-in-out;
 	margin-top: 15vmin;
 	background-color: #050f29;
 	margin-bottom: 0;
