@@ -47,8 +47,8 @@ header{
 }
 
 .first input{
-	padding: 1em;
-	border: none;
+ 	padding: 1em;
+ 	border: none;
 	border-radius: 7px;
 	border: 1px solid lightgray;
 	position: relative;
@@ -90,7 +90,7 @@ header{
 	background-color: white;
 	margin-right: 2vmin;
 	cursor: pointer;
-	outline: none!important;
+  outline: none!important;
 }
 
 .second button:hover{
@@ -106,8 +106,8 @@ header{
 }
 
 .dr1 input{
-	padding: 0.7em;
-	border: none;
+ 	padding: 0.7em;
+ 	border: none;
 	border-bottom: 1px solid lightgray; 
 	position: relative;
 	margin-top: 7vmin;
@@ -207,61 +207,61 @@ footer p{
 }
 
 .fot-bot #Kurbanov{
-	font-family: 'Permanent Marker';
+  font-family: 'Permanent Marker';
 	font-weight: 900;
 }
 
 .fot-bot #open-source{
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 1em;
-	color: rgb(189, 181, 181);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(189, 181, 181);
 }
 
 .foot-img{
-	position: relative;
-	height: 35vh;
-	background-color: #0b2056;
-	color: white;
+  position: relative;
+  height: 40vh;
+  background-color: #0b2056;
+  color: white;
 }
 
 .foot-img h1{
-	padding-top: 3vmin;
-	font-family: 'Rubik';
+  padding-top: 3vmin;
+  font-family: 'Rubik';
 	font-weight: 900;
 }
 
 .ft-img{
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 420px) {
-	.ft-img{
-		align-items: center;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	.foot-img{
-		height: 80vh;
-	}
-	header h1{
-		font-size: 1.4em;
-	} 
-	.heart-fot{
-		margin-top: 15px;
-	}
+  .ft-img{
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  
+  .foot-img{
+    height: 80vh;
+  }
+  header h1{
+    font-size: 1.4em;
+} 
+  .heart-fot{
+    margin-top: 15px;
+  }
 }
-
+  
 .heart-fot{
-	padding-top: 10px;
-	display: flex;
-	justify-content: center;
-}
-
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
 
 .ft-img img{
-	display: inline-block;
-	margin: 20px;
+  display: inline-block;
+  margin: 20px;
 }
