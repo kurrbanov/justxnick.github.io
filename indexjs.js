@@ -21,9 +21,6 @@ var divisionDegree1, divisionDegree2, divisionDegree3;
 var divisionNumber1, divisionNumber2;
 var divisionRes1, divisionRes2, divisionRes1Res2,divisionResult;
 
-footerColor = document.getElementById('footerColor');
-
-
 
 function resultNumber(){
 	userNumber = document.getElementById('num').value;
@@ -162,6 +159,9 @@ function divisionNumbers(){
 }
 
 function timeColor(){
+
+  	footerColor = document.getElementById('footerColor');
+
 	time = new Date();
 	hour = time.getHours().toString();
 	minute = time.getMinutes().toString();
