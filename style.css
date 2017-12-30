@@ -49,7 +49,7 @@ header{
 .first input{
  	padding: 1em;
  	border: none;
-	border-radius: 7px;
+	border-radius: 10px;
 	border: 1px solid lightgray;
 	position: relative;
 	margin-top: 7vmin;
@@ -167,28 +167,28 @@ header{
 	margin-top: 10vmin;
 }
 
-.perevesti button{
-	padding-top: 2vmin;
-	padding-bottom: 2vmin;
+button{
+	padding-top: 1.5vmin;
+	padding-bottom: 1.5vmin;
 	text-align: center;
-	padding-left: 8vmin;
-	padding-right: 8vmin;
+	padding-left: 7vmin;
+	padding-right: 7vmin;
 	background-color: #3174e0;
 	color: white;
 	font-family: 'Roboto';
 	font-weight: 300;
-	border-radius: 5px;
+	border-radius: 7px;
 	border: none;
 	font-size: 1.3em;
 	cursor: pointer;
 }
 
-.perevesti button:hover{
+button:hover{
 	transition: all .3s ease-in-out;
 	background-color: #263e66;
 }
 
-.perevesti button:focus{
+button:focus{
 	outline: none!important;
 }
 
@@ -264,4 +264,92 @@ footer p{
 .ft-img img{
   display: inline-block;
   margin: 20px;
+  
+}
+
+.math{
+	margin-top: 9vmin;
+	align-items: center;
+	justify-content: center;
+}
+
+.math h1{
+	font-family: 'Rubik';
+	font-weight: 900;
+}
+
+.math .degree{
+	display: flex;
+	margin-top: 6vmin;
+	justify-content: center;
+	align-items: center;
+}
+
+.math .numbers{
+	display: flex;
+	margin-top: 4vmin;
+	justify-content: center;
+	align-items: center;
+}
+
+.math .degree input{
+	margin: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	width: 115px;
+	outline: none!important;
+	font-family: 'Roboto';
+	font-weight: 300;
+}
+
+.math .numbers input{
+	outline: none!important;
+	padding: 8px;
+	border-bottom: 1.3px solid lightgrey;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	text-align: center;
+	font-family: 'Roboto';
+	font-weight: 300;
+	margin: 10px
+}
+
+
+.math .numbers input:focus{
+	transition: all .3s ease-in-out;
+	border: none;
+	border-bottom: 1px solid black; 
+	outline: none!important;
+}
+
+.math .degree input:focus{
+	transition: all .3s ease-in-out;
+	border: none;
+	border: 1px solid black;
+	outline: none!important;
+}
+
+
+.math .bttn{
+	margin-top: 30px;
+}
+
+@media only screen and (max-width: 420px) {
+	.math .degree{
+		justify-content: center;
+		align-items: center;
+		display: inline-block;
+	}
+	
+	.math .numbers{
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.math{
+		display: inline-block;
+	}
 }
