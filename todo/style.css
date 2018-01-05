@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*::selection{
+  color: white;
+  background: #ff5252; 
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  margin-top: 14vh;
+  width: 60vw;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 0px 13px 0px 13px;
+  margin-bottom: 15vh;
+}
+
+.header{
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  font-family: 'Rubik';
+  font-weight: 900;
+  padding: 20px;
+}
+
+.header input{
+  padding: 10px;
+  width: 47vw;
+  outline: none!important;
+  font-family: 'Roboto';
+  border-radius: 5px;
+  border: 1.3px solid lightgrey;
+}
+
+
+.header button{
+  color: white;
+  background-color: #3174e0;
+  border: none;
+  border-radius: 5px;
+  padding: 11.3px 20px 11.3px 20px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  outline: none!important;
+  cursor: pointer;
+}
+
+.header button:hover{
+  background-color: #263e66;
+  transition: all .3s ease-in-out;
+}
+
+
+.app ul li{
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: 400;
+  cursor: pointer;
+  
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.app ul li:hover{
+  background-color: #d1d1d1;
+  transition: all .3s ease-in-out;
+}
+
+.app ul li.checked{
+  text-decoration: line-through;
+  background-color: #37a33b;
+  color: white;
+}
+
+.app ul li.checked:hover{
+  background-color: #277029;
+  transition: all .3s ease-in-out;
+}
+
+.app .close{
+  text-decoration: none!important;
+  float: right;
+  padding: 0px 5px 0px 5px;
+  border-radius: 10px;
+}
+
+.app .close:hover{
+  background-color: #d84545;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.app #Kurbanov{
+  font-family: 'Permanent Marker';
+  font-weight: 900;
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .app{
+    padding: 0px; 
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header button{
+    margin-top: 15px;
+    width: 17vw;
+    padding: 11.3px 0px 11.3px 0px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .app{
+    width: 50vw;
+  }
+  
+  .app .header input{
+    width: 39vw;
+  }
+}
