@@ -53,6 +53,12 @@ html, body{
     animation-iteration-count: infinite;
 }
 
+@media only screen and (max-width: 700px) {
+  .preloader h1#Kurbanov {
+    font-size: 3em;
+  }
+}
+
 header{
 	background-image: linear-gradient(to bottom, black 0%, transparent 35%), url('https://ak7.picdn.net/shutterstock/videos/7104067/thumb/1.jpg');
 	height: 100vh;
