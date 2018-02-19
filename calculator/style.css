@@ -16,6 +16,43 @@ html, body{
 	background: #fff;
 }
 
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: firebrick;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader h1#Kurbanov {
+    color: white;
+    font-family: 'Permanent Marker';
+    font-size: 5em;
+    text-align: center;
+    transition: all 1s ease-in-out;
+
+    animation-name: emergence;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal; 
+    animation-iteration-count: infinite;
+}
+
 header{
 	background-image: linear-gradient(to bottom, black 0%, transparent 35%), url('https://ak7.picdn.net/shutterstock/videos/7104067/thumb/1.jpg');
 	height: 100vh;
