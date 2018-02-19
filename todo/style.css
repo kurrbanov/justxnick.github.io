@@ -169,3 +169,9 @@ ul{
     width: 39vw;
   }
 }
+
+@keyframes emergence {
+    0% { opacity: 0; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
