@@ -15,7 +15,7 @@ pipeBottom.src = "img/flappy_bird_pipeBottom.png";
 
 var gap = 90;
 
-document.addEventListener("mousedown", moveUp);
+document.addEventListener("click", moveUp);
 
 function moveUp() {
     yPos -= 27;
@@ -50,7 +50,7 @@ function draw() {
             });
         }
 
-        if (xPos + bird.width >= pipe[i].x && xPos <= pipe[i].x + pipeUp.width && (yPos <= pipe[i].y + pipeUp.height || yPos + bird.height >= pipe[i].y + pipeUp.height + gap) || yPos + bird.height >= cvs.height - fg.height || yPos + bird.height >= cvs.height) {
+        if (xPos + bird.width >= pipe[i].x && xPos <= pipe[i].x + pipeUp.width && (yPos <= pipe[i].y + pipeUp.height || yPos + bird.height >= pipe[i].y + pipeUp.height + gap) || yPos + bird.height >= cvs.height - fg.height) {
             location.reload();
         }
 
